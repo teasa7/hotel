@@ -1,8 +1,18 @@
 .nav__list {
     display: flex;
     column-gap: 10px;
+    margin-top: 30px;
 }
-// .nav__list a {
-//     width: 120px;
-//     height: 30px;
-// }
+.nav__list a {
+    display: block;
+    color: $green;
+    width: 120px;
+    text-align: center;
+    transition: color 0.2s ease-in;
+    &:hover {
+        font-size: 17px;
+        color: $white;
+        background: $green;
+        border-radius: 100px;
+    }
+}

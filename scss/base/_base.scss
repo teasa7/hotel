@@ -14,14 +14,6 @@ body {
 }
 a {
     color: $green;
-    transition: color 0.2s ease-in;
-    &:hover {
-        color: $white;
-        background: $green;
-        border-radius: 100px;
-        width: 120px;
-        height: 30px;
-    }
 }
 .container {
     margin: 0 auto;

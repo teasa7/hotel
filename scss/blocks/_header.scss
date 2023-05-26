@@ -3,12 +3,37 @@
     flex-direction: column;
     justify-content: space-between;
     height: 917px;
+    padding-top: 29px;
+    padding-bottom: 74px;
+    margin-left: auto;
+    background-image: url("../../img/header/figure.png");
+    background-repeat: no-repeat;
+    background-position: right;
 }
 .header__top-row {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    column-gap: 57.07px;
-
-    width: 657px;
+    column-gap: 57px;
+    margin-left: 88px;
+}
+.header__title {
+    margin-left: 100px;
+    font-family: $font-accent;
+    &--h1 {
+        color: $green;
+        font-size: 200px;
+    }
+    &--h2 {
+        color: $pink;
+        margin-left: 231px;
+        font-size: 130px;
+    }
+}
+.header__footer {
+    margin-left: 100px;
+}
+.header__footer-text {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
 }
