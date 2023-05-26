@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 917px;
+}
+.header__top-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 57.07px;
+
+    width: 657px;
+}

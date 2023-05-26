@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Engagement&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Explora&display=swap');
+
+body {
+    font-family: $font-main;
+    color: $black;
+    font-size: 16px;
+    background: linear-gradient(
+        180deg, 
+        #FFF2EB 0%, 
+        #C0C0C0 100%);
+    background-repeat: no-repeat;
+}
+a {
+    color: $green;
+    transition: color 0.2s ease-in;
+    &:hover {
+        color: $white;
+        background: $green;
+        border-radius: 100px;
+        width: 120px;
+        height: 30px;
+    }
+}
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1342px;
+}
