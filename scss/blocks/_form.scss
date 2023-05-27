@@ -1,0 +1,61 @@
+.form {
+    display: flex;
+    align-items: center;
+    background: #F5F5F5;
+    box-shadow: 0px 4px 48px rgba(153, 76, 22, 0.29);
+    border-radius: 20px;
+    width: 812px;
+    padding: 15px 0 15px 35px;
+}
+.form__input-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    column-gap: 20px;
+    width: 180px;
+    padding-left: 20px;
+    background-position: 20px 0;
+}
+.form__input--date {
+    background-image: url("../../img/header/date.svg");
+}
+.form__input--guests {
+    border-right: none;
+    background-image: url("../../img/header/account.svg");
+}
+.form__label {
+    font-size: 14px;
+    font-weight: 300;
+    padding-left: 40px;
+    color:rgb(54, 54, 54);
+    border-right: 2px solid #F3D2C0;
+    &-guest {
+        border-right: none;
+    }
+}
+.form__input {
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: 50px;
+    color: $pink;
+    border-right: 2px solid #F3D2C0;
+    &::placeholder {
+        color: $pink;
+    }
+}
+.form__select {
+    font-size: 40px;
+}
+.button {
+    text-align: center; 
+    border-radius: 20px;
+    background-color: $green;
+    color: $white;
+    font-size: 23px;
+}
+.button--booking {
+    width: 157px;
+    height: 65px;
+    margin-left: auto;
+    margin-right: 34px;
+}

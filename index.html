@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel 25 Dollars</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="libs/CustomSelect/css/custom-select.css">
 </head>
 <body>
     <header class="header">
@@ -31,13 +32,27 @@
         </div>
         <div class="header__footer">
             <p class="header__footer-text">Discovery the best place to experience and enjoy the life</p>
-            <!-- <form action="" class="header__form">
-                <input type="date" name="check_in">
-                <input type="date" name="check_out">
-                <select>
-
-                </select>
-            </form> -->
+            <form action="" class="form">
+                <div class="form__input-wrapper form__input--date">
+                    <label for="date_in" class="form__label">Check in</label>
+                    <input type="text" class="form__input" id="date_in" name="date_in" placeholder="Check in">
+                </div>
+                <div class="form__input-wrapper form__input--date">
+                    <label for="date_out" class="form__label">Check out</label>
+                    <input type="text" class="form__input" id="date_out" name="date_out" placeholder="Check out">
+                </div>
+                <div class="form__input-wrapper form__input--guests">
+                    <label for="guests" class="form__label form__label-guest">Guests</label>
+                    <select class="form__select form__label-guest" name="guests" id="guests">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5 or more">5 and more</option>
+                    </select>
+                </div>
+                    <button class="button button--booking">Booking</button>
+            </form >
         </div>
         </div>
     </header>
@@ -49,5 +64,8 @@
         <div class="container">
         </div>
     </footer>
+    <script src="libs/CustomSelect/js/custom-select.min.js"></script>
+    <script src="libs/Easepick/js/easepick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
