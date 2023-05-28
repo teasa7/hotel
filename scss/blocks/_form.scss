@@ -1,10 +1,10 @@
 .form {
     display: flex;
     align-items: center;
-    background: #F5F5F5;
+    background: $light_orange;
     box-shadow: 0px 4px 48px rgba(153, 76, 22, 0.29);
     border-radius: 20px;
-    width: 812px;
+    width: 1000px;
     padding: 15px 0 15px 35px;
 }
 .form__input-wrapper {
@@ -12,7 +12,7 @@
     flex-direction: column;
     background-repeat: no-repeat;
     column-gap: 20px;
-    width: 180px;
+    width: 250px;
     padding-left: 20px;
     background-position: 20px 0;
 }
@@ -37,25 +37,12 @@
     font-family: $font-secondary;
     font-weight: 400;
     font-size: 50px;
-    color: $pink;
+    color: $orange;
     border-right: 2px solid #F3D2C0;
     &::placeholder {
-        color: $pink;
+        color: $orange;
     }
 }
 .form__select {
     font-size: 40px;
-}
-.button {
-    text-align: center; 
-    border-radius: 20px;
-    background-color: $green;
-    color: $white;
-    font-size: 23px;
-}
-.button--booking {
-    width: 157px;
-    height: 65px;
-    margin-left: auto;
-    margin-right: 34px;
 }

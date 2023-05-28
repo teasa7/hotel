@@ -6,6 +6,7 @@ body {
     font-family: $font-main;
     color: $black;
     font-size: 16px;
+    height: 8000px;
     background: linear-gradient(
         180deg, 
         #FFF2EB 0%, 
@@ -16,7 +17,29 @@ a {
     color: $green;
 }
 .container {
-    margin: 0 auto;
-    padding: 0 15px;
-    width: 1342px;
+    margin: 0 100px;
+    padding: 0 20px;
+    width: 1700px;
+}
+.title {
+    color: $green;
+    &--3 {
+        font-weight: 500;
+        font-size: 40px;
+        margin-bottom: 40px;
+        line-height: 60px;
+    }
+    &--4 {
+        font-weight: 100;
+        font-size: 60px;
+        line-height: 90px;
+        margin-bottom: 28px;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+.light_text {
+    color: $gray;
+    font-size: 21px;
+    line-height: 32px;
+    margin-bottom: 20px;
 }

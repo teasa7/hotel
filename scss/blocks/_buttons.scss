@@ -1,0 +1,20 @@
+.button {
+    text-align: center; 
+    border-radius: 20px;
+    background-color: $green;
+    color: $white;
+    height: 65px;
+    font-size: 23px;
+    &:hover {
+        background-color: $orange;
+    }
+}
+.button--booking {
+    width: 157px;
+    margin-left: auto;
+    margin-right: 34px;
+}
+.button--learn {
+    width: 240px;
+    margin-top: auto;
+}

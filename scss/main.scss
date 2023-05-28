@@ -4,6 +4,12 @@
 @import 'base/base';
 
 // Blocks
+
+// Header
 @import 'blocks/header';
 @import 'blocks/nav';
 @import 'blocks/form';
+
+// Main
+@import 'blocks/containers';
+@import 'blocks/buttons';
