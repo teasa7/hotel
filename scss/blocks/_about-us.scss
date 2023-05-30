@@ -1,0 +1,16 @@
+.section__two-column {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    column-gap: 200px;
+}
+.column-rooms {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+.about_img {
+    border-radius: 20px;
+    margin-bottom: 28px;
+    height: 100%;
+}

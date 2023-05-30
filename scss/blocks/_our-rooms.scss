@@ -5,7 +5,7 @@
     width: 600px;
     justify-content: space-between;
 }
-.card-row {
+.card-rooms {
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -19,7 +19,7 @@
         border-right: 4px solid $green;
     }
 }
-.card-row__info {
+.card-rooms__info {
     padding-left: 20px;
     color: $green;
     &--title { 

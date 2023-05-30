@@ -57,11 +57,11 @@
     </header>
     <main class="main">
         <section class="section">
-            <div class="grid">
-                <div>
+            <div class="grid-four about-us">
+                <header>
                     <h3 class="title title--3">Abous us</h3>
-                    <span class="header-line"></span>
-                </div>
+                    <span class="title-line"></span>
+                </header>
                 <h4 class="title title--4">Best place to enjoy your  lifetime</h4>
                 <article class="column column--flex">             
                     <p class="light_text">
@@ -83,22 +83,22 @@
                     </p>
                     <button class="button button--learn">Learn more</button>
                 </article>
-                <article class="column column--flex-between">
+                <article class="flex-column flex-column--between">
                     <img class="about_img" src="/img/main/about.jpg" alt="Abous US">
-                    <div class="flex_cards">
-                        <div class="card card--about">
+                    <div class="flex-row flex-row--between">
+                        <div class="card--about">
                             <p class="card--text-accent">102</p>
                             <p class="card--small-text"> Room & Suite</p>
                         </div>
-                        <div class="card card--about">
+                        <div class="card--about">
                             <p class="card--text-accent">15</p>
                             <p class="card--small-text">Restaurant</p>
                         </div>
-                        <div class="card card--about">
+                        <div class="card--about">
                             <p class="card--text-accent">02</p>
                             <p class="card--small-text">Gym & Tennis</p>
                         </div>
-                        <div class="card card--about">
+                        <div class="card--about">
                             <p class="card--text-accent">104</p>
                             <p class="card--small-text">Swimming Pool</p>
                         </div>
@@ -107,17 +107,15 @@
             </div> 
         </section>
         <section class="section">
-            <div class="section--how-to-work">
-                <header class="section__header">
-                    <div class="section__header--left">
-                        <h3 class="title title--3">How to work</h3>
-                        <span class="header-line"></span>
-                    </div>
+            <div class="how-to-work">
+                <header class="grid-four section__header">
                     <div>
-                        <h4 class="title title--4 title--4-white">Luxury, Easy , Safe, Enjoy your Trip</h4>
+                        <h3 class="title title--3">How to work</h3>
+                        <span class="title-line"></span>
                     </div>
+                    <h4 class="title title--4 title--white">Luxury, Easy , Safe, Enjoy your Trip</h4>
                 </header>
-                <div class="flex_cards flex_cards--work">
+                <div class="flex-row flex-row--between flex-cards--work">
                     <div class="card card--work">
                         <img class="card--circle-img" src="img/main/luxury.jpg" alt="Luxury">
                         <p class="card--title-text">Luxury Resort</p>
@@ -137,38 +135,38 @@
             </div>    
         </section>
         <section class="section">
-            <div class="grid our-rooms">
-                <div>
+            <div class="grid-four our-rooms">
+                <header>
                     <h3 class="title title--3">Our rooms</h3>
-                    <span class="header-line"></span>
-                </div>
+                    <span class="title-line"></span>
+                </header>
                 <h4 class="title title--4">Discover our luxury rooms interior design</h4>
-                <div class="column--flex columm_between">
-                    <div class="card-row">
-                        <img class="card-row--img" src="img/main/room1.jpg" alt="Room">
-                        <div class="card-row__info">
-                            <p class="card-row__info--title">Classic room</p>
-                            <p class="card-row__info--text">STARTING FROM : <span class="card-row__info--orange">$50.00/ Night</span></p>
+                <div class="column-rooms columm_between">
+                    <div class="card-rooms">
+                        <img class="card-rooms--img" src="img/main/room1.jpg" alt="Room">
+                        <div class="card-rooms__info">
+                            <p class="card-rooms__info--title">Classic room</p>
+                            <p class="card-rooms__info--text">STARTING FROM : <span class="card-rooms__info--orange">$50.00/ Night</span></p>
                         </div>
                     </div>
-                    <div class="card-row">
-                        <img class="card-row--img" src="img/main/room2.jpg" alt="Room">
-                        <div class="card-row__info">
-                            <p class="card-row__info--title">Ultra superior</p>
-                            <p class="card-row__info--text">STARTING FROM : <span class="card-row__info--orange">$100.00/ Night</span></p>
+                    <div class="card-rooms">
+                        <img class="card-rooms--img" src="img/main/room2.jpg" alt="Room">
+                        <div class="card-rooms__info">
+                            <p class="card-rooms__info--title">Ultra superior</p>
+                            <p class="card-rooms__info--text">STARTING FROM : <span class="card-rooms__info--orange">$100.00/ Night</span></p>
                         </div>                   
                     </div>
-                    <div class="card-row">
-                        <img class="card-row--img" src="img/main/room3.jpg" alt="Room">
-                        <div class="card-row__info">
-                            <p class="card-row__info--title">Grand deluxe</p>
-                            <p class="card-row__info--text">STARTING FROM : <span class="card-row__info--orange">$500.00/ Night</span></p>
+                    <div class="card-rooms">
+                        <img class="card-rooms--img" src="img/main/room3.jpg" alt="Room">
+                        <div class="card-rooms__info">
+                            <p class="card-rooms__info--title">Grand deluxe</p>
+                            <p class="card-rooms__info--text">STARTING FROM : <span class="card-rooms__info--orange">$500.00/ Night</span></p>
                         </div>
                     </div>
                 </div>
-                <div class="card-big-room">
+                <div class="card-big-room">     
                     <img class="card-big-room--img" src="img/main/big_room1.jpg" alt="Big room">
-                <button class="button button--view">Learn more</button>
+                    <button class="button button--view">Learn more</button>
                 </div>
             </div>
         </section>
@@ -178,6 +176,242 @@
                     <img src="img/main/video_play.png" alt="Video play" class="video__icon">
                     <img src="img/main/video.jpg" alt="Video play" class="video__img">
                 </a>
+            </div>
+        </section>
+        <section class="section">
+            <div class="our-clients">
+                <header class="grid-four section__header">
+                    <div>
+                        <h3 class="title title--3">Our clients</h3>
+                        <span class="title-line"></span>
+                    </div>
+                    <h4 class="title title--4">Testimony from our Clients about Services</h4>
+                </header>
+                <div class="grid-cards">
+                    <div class="flex-column flex-gap flex-column--start">
+                        <div class="card--client flex-column flex-column--between">
+                            <div class="card--main flex-column flex-column--between">
+                                <p>Clean and comfortable rooms, mini-bar is always full! As in all hotels, 
+                                the restaurant has a wide range of dishes. Well done bartenders prepare delicious milkshakes.</p>
+                                <div class="flex-cards flex-center stars">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_empty.svg" alt="Empty star">
+                                </div>
+                            </div>
+                            <div class="card-footer flex-row flex-row--between">
+                                <img class="card-footer--img" src="img/clients/1.jpg" alt="Client">
+                                <div class="card-footer--title">
+                                    <div class="flex-cards flex-center stars-bottom">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                    </div>
+                                    <p class="card-footer--name">Yun lee</p>
+                                    <p class="card-footer--profession">Ceo-Fashionova</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card--client flex-column flex-column--between">
+                            <div class="card--main flex-column flex-column--between">
+                                <p>The sea is clean, there are always enough sun loungers, the food is very tasty, varied. The staff are pleasant and responsive</p>
+                                <div class="flex-cards flex-center stars">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                </div>
+                            </div>
+                            <div class="card-footer flex-row flex-row--between">
+                                <img class="card-footer--img" src="img/clients/2.jpg" alt="Client">
+                                <div class="card-footer--title">
+                                    <div class="flex-cards flex-center stars-bottom">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                    </div>
+                                    <p class="card-footer--name">Yvan</p>
+                                    <p class="card-footer--profession">Ceo-Fashionova</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-column flex-gap flex-column--start flex-column--start_padding">
+                        <div class="card--client flex-column flex-column--between">  
+                            <div class="card--main flex-column flex-column--between">
+                                <p>We visited the Turkish bath at the hotel (hamam). Everything is clean, 
+                                you can see that they care about you, provide quality services. The massage therapist did a great massage.</p>
+                                <div class="flex-cards flex-center stars">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                </div>
+                            </div>
+                            <div class="card-footer flex-row flex-row--between">
+                                <img class="card-footer--img" src="img/clients/3.jpg" alt="Client">
+                                <div class="card-footer--title">
+                                    <div class="flex-cards flex-center stars-bottom">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                    </div>
+                                    <p class="card-footer--name">Hubert</p>
+                                    <p class="card-footer--profession">Ceo-Fashionova</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-column card--client flex-column--between">
+                            <div class="card--main flex-column flex-column--between">
+                                <p>The hotel offers a magnificent view of the mountains, a rich natural landscape. We stayed in a 
+                                family villa located closer to the pool. But it was frustrating that the neighbors listened loudly to music until 0-0:30</p>
+                                <div class="flex-cards flex-center stars">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_empty.svg" alt="Empty star">
+                                </div>
+                            </div>
+                            <div class="card-footer flex-row flex-row--between">
+                                <img class="card-footer--img" src="img/clients/4.jpg" alt="Client">
+                                <div class="card-footer--title">
+                                    <div class="flex-cards flex-center stars-bottom">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                    </div>
+                                    <p class="card-footer--name">Xiaozu</p>
+                                    <p class="card-footer--profession">Ceo-Fashionova</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-column flex-gap flex-column--end flex-column--end_padding">
+                        <div class="card--client flex-column flex-column--between">
+                            <div class="card--main flex-column flex-column--between">
+                                <p>Set in Budapest, within 0.2 mi of Dohany Street Synagogue and 0.4 mi 
+                                of Hungarian National Museum, Silver Crown Residence features accommodations 
+                                with a flat-screen TV and a kitchen.</p>
+                                <div class="flex-cards flex-center stars">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                </div>
+                            </div>
+                            <div class="card-footer flex-row flex-row--between">
+                                <img class="card-footer--img" src="img/clients/5.jpg" alt="Client">
+                                <div class="card-footer--title">
+                                    <div class="flex-cards flex-center stars-bottom">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                    </div>
+                                    <p class="card-footer--name">Yun lee</p>
+                                    <p class="card-footer--profession">Ceo-Fashionova</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-column card--client flex-column--between">
+                            <div class="card--main flex-column flex-column--between">
+                                <p>Set in Budapest, within 0.2 mi of Dohany Street Synagogue and 0.4 mi 
+                                of Hungarian National Museum, Silver Crown Residence features accommodations 
+                                with a flat-screen TV and a kitchen.</p>
+                                <div class="flex-cards flex-center stars">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                </div>
+                            </div>
+                            <div class="card-footer flex-row flex-row--between">
+                                <img class="card-footer--img" src="img/clients/6.jpg" alt="Client">
+                                <div class="card-footer--title">
+                                    <div class="flex-cards flex-center stars-bottom">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                    </div>
+                                    <p class="card-footer--name">Yvan</p>
+                                    <p class="card-footer--profession">Ceo-Fashionova</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-column flex-gap flex-column--end">
+                        <div class="card--client flex-column flex-column--between">  
+                            <div class="card--main flex-column flex-column--between">
+                                <p>Excellent varied and delicious food throughout the day. Lots of bars including a beach bar. Beautiful panoramic clean pool.</p>
+                                <div class="flex-cards flex-center stars">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_empty.svg" alt="Empty star">
+                                </div>
+                            </div>
+                            <div class="card-footer flex-row flex-row--between">
+                                <img class="card-footer--img" src="img/clients/7.jpg" alt="Client">
+                                <div class="card-footer--title">
+                                    <div class="flex-cards flex-center stars-bottom">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                    </div>
+                                    <p class="card-footer--name">Hubert</p>
+                                    <p class="card-footer--profession">Ceo-Fashionova</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-column card--client flex-column--between">
+                            <div class="card--main flex-column flex-column--between">
+                                <p>Very green, beautiful hotel! Well-groomed territory, original locations. The hotel is great for families with children.</p>
+                                <div class="flex-cards flex-center stars">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                    <img src="img/icons/star_full.svg" alt="Full star">
+                                </div>
+                            </div>
+                            <div class="card-footer flex-row flex-row--between">
+                                <img class="card-footer--img" src="img/clients/8.jpg" alt="Client">
+                                <div class="card-footer--title">
+                                    <div class="flex-cards flex-center stars-bottom">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                        <img src="img/icons/star_full.svg" alt="Full star">
+                                    </div>
+                                    <p class="card-footer--name">Xiaozu</p>
+                                    <p class="card-footer--profession">Ceo-Fashionova</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
