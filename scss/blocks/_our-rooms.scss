@@ -1,0 +1,46 @@
+.our-rooms {
+    margin-bottom: 118px;
+}
+.columm_between {
+    width: 600px;
+    justify-content: space-between;
+}
+.card-row {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    background: #CBC9C8;
+    align-items: center;
+    border-radius: 20px;
+    &--img {
+        border-radius: 20px;
+    }
+    &:hover {
+        border-right: 4px solid $green;
+    }
+}
+.card-row__info {
+    padding-left: 20px;
+    color: $green;
+    &--title { 
+        font-weight: 600;
+        font-size: 29px;
+        line-height: 44px;     
+    }
+    &--text { 
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 22px;
+    }
+    &--orange {
+        color: $orange;
+    }
+}
+.card-big-room {
+    text-align: right;
+}
+.card-big-room--img {
+    height: 100%;
+    border-radius: 20px;
+    margin-bottom: 28px;
+}
