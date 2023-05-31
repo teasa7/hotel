@@ -1,3 +1,28 @@
+// Block our rooms - big photo
+function bigPhoto(event) {
+    event.preventDefault();
+
+    const all_rooms = document.querySelectorAll('.card-rooms');
+    all_rooms.forEach(element => {
+        element.classList.remove('border-active'); 
+    });
+    
+    const gl_photo = document.querySelector('#big_photo');
+    const src_photo = event.target.querySelector('img').getAttribute('src');
+    const number_photo = parseInt(src_photo.match(/\d+/));
+
+    if(number_photo == 1) {
+        gl_photo.src = 'img/main/big_room1.jpg';
+        event.target.classList.add('border-active'); 
+    } else if (number_photo == 2) {
+        gl_photo.src = 'img/main/big_room2.jpg';
+        event.target.classList.add('border-active'); 
+    } else if (number_photo == 3) {
+        gl_photo.src = 'img/main/big_room3.jpg';
+        event.target.classList.add('border-active'); 
+    }
+}
+// Custom select
 customSelect('select');
 
 const picker = new easepick.create({
@@ -16,8 +41,7 @@ const picker2 = new easepick.create({
     format: 'DD/MM',
 });
 
-/* Yandex Map */
-
+// Yandex Map 
 ymaps.ready(init);
     function init(){
         // Создание карты.

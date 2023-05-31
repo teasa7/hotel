@@ -544,10 +544,6 @@ a {
   padding: 40px;
 }
 
-.our-rooms {
-  margin-bottom: 118px;
-}
-
 .columm_between {
   width: 600px;
   -webkit-box-pack: justify;
@@ -573,9 +569,6 @@ a {
 .card-rooms--img {
   border-radius: 20px;
 }
-.card-rooms:hover {
-  border-right: 4px solid #08372F;
-}
 
 .card-rooms__info {
   padding-left: 20px;
@@ -600,9 +593,18 @@ a {
 }
 
 .card-big-room--img {
-  height: 100%;
+  width: 100%;
+  height: 600px;
   border-radius: 20px;
   margin-bottom: 28px;
+}
+
+.border-active {
+  border-right: 4px solid #08372F;
+}
+
+.height-600 {
+  height: 600px;
 }
 
 .card--client {
@@ -648,6 +650,10 @@ a {
 .video {
   position: relative;
 }
+.video:hover {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+}
 
 .video__link {
   width: 100%;
@@ -660,6 +666,13 @@ a {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  z-index: 1;
+}
+.video__icon:hover {
+  -webkit-filter: saturate(1);
+          filter: saturate(1);
 }
 
 .video__img {
