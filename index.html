@@ -7,6 +7,7 @@
     <title>Hotel 25 Dollars</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="libs/CustomSelect/css/custom-select.css">
+    <link rel="stylesheet" href="libs/youtubeLightbox/youtubeLightbox.css">
 </head>
 <body>
     <header class="header">
@@ -108,7 +109,7 @@
         </section>
         <section class="section">
             <div class="how-to-work">
-                <header class="grid-four section__header">
+                <header class="grid-four">
                     <div>
                         <h3 class="title title--3">How to work</h3>
                         <span class="title-line"></span>
@@ -172,7 +173,7 @@
         </section>
         <section class="section">
             <div class="video">
-                <a href="https://youtu.be/21wUK2fgw8c" class="video__link" target="_blank">
+                <a href="https://youtu.be/21wUK2fgw8c" data-youtubelightbox class="video__link" target="_blank">
                     <img src="img/main/video_play.png" alt="Video play" class="video__icon">
                     <img src="img/main/video.jpg" alt="Video play" class="video__img">
                 </a>
@@ -180,7 +181,7 @@
         </section>
         <section class="section">
             <div class="our-clients">
-                <header class="grid-four section__header">
+                <header class="grid-four">
                     <div>
                         <h3 class="title title--3">Our clients</h3>
                         <span class="title-line"></span>
@@ -416,11 +417,46 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="footer-bg">
+            <div class="map" id="map"></div>  
+        </div>
+        <div class="footer__info flex-column flex-column--between">
+            <div>
+                <header>
+                    <h3 class="title title--3 title--padding-none">Information</h3>
+                    <span class="title-line"></span>
+                </header>
+                <h4 class="title title--4">Contact us</h4>
+            </div>
+            <div>
+                <div class="footer-title"><p class="text-title-dark">City, <span class="text-title-light">Country</span></p></div>
+                <p>Shimla, India</p>
+                <p>Florida, USA</p>
+            </div>
+            <div>
+                <div class="footer-title"><p class="text-title-dark">Email</p></div>
+                <p>support@25dollarsupport.com</p>
+            </div>
+            <div>
+                <div class="footer-title"><p class="text-title-dark">Call, <span class="text-title-light">Directly</span></p></div>
+                <p>+1 857-342-2365</p>
+            </div>
         </div>
     </footer>
+    <div class="footer-end"><p>2022ReconfortDanielDesign allright Reserved</p></div>
+    <!-- YouTube LightBox -->
+    <div id="youtubelightbox" class="youtubelightbox">
+        <div class="youtubelightbox__centeredchild">
+            <div class="youtubelightbox__videowrapper">
+                <div id="youtubelightboxPlayer"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d3d173d2-119e-4cdb-866b-5c6e84ed35aa&lang=ru_RU" type="text/javascript"></script>
+
     <script src="libs/CustomSelect/js/custom-select.min.js"></script>
     <script src="libs/Easepick/js/easepick.min.js"></script>
+    <script src="libs/youtubeLightbox/youtubeLightbox.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
