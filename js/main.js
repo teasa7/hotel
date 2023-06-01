@@ -4,42 +4,32 @@ function bigPhoto(event) {
 
     const all_rooms = document.querySelectorAll('.card-rooms');
     all_rooms.forEach(element => {
-        element.classList.remove('border-active'); 
+        element.classList.remove('border-active');       
     });
-    
+
+    let click_room = event.target;
+    if(event.target.tagName -= 'A') {
+        click_room = event.target;
+    }
+    else {
+        click_room = event.target.closest('a');
+    }
+
     const gl_photo = document.querySelector('#big_photo');
-    const src_photo = event.target.querySelector('img').getAttribute('src');
+    const src_photo = click_room.querySelector('img').getAttribute('src');
     const number_photo = parseInt(src_photo.match(/\d+/));
 
     if(number_photo == 1) {
         gl_photo.src = 'img/main/big_room1.jpg';
-        event.target.classList.add('border-active'); 
+        click_room.classList.add('border-active'); 
     } else if (number_photo == 2) {
         gl_photo.src = 'img/main/big_room2.jpg';
-        event.target.classList.add('border-active'); 
+        click_room.classList.add('border-active'); 
     } else if (number_photo == 3) {
         gl_photo.src = 'img/main/big_room3.jpg';
-        event.target.classList.add('border-active'); 
+        click_room.classList.add('border-active'); 
     }
 }
-// Custom select
-customSelect('select');
-
-const picker = new easepick.create({
-    element: document.getElementById('date_in'),
-    css: [
-        'https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.1/dist/index.css',
-    ],
-    format: 'DD/MM',
-});
-
-const picker2 = new easepick.create({
-    element: document.getElementById('date_out'),
-    css: [
-        'https://cdn.jsdelivr.net/npm/@easepick/bundle@1.2.1/dist/index.css',
-    ],
-    format: 'DD/MM',
-});
 
 // Yandex Map 
 ymaps.ready(init);
@@ -83,3 +73,47 @@ ymaps.ready(init);
     myMap.geoObjects.add(myPlacemark); 
     // myPlacemark.balloon.open(); 
 }
+
+// Calendar
+let dpMin, dpMax;
+
+dpMin = new AirDatepicker('#date_in', {
+    onSelect({date}) {
+        dpMax.update({
+            minDate: date
+        })
+    },
+    locale: {
+        days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+        daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+        daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+        months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+        monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        today: 'Today',
+        clear: 'Clear',
+        firstDay: 0
+    },
+    dateFormat: 'dd/MMMM'
+})
+
+dpMax = new AirDatepicker('#date_out', {
+    onSelect({date}) {
+        dpMin.update({
+            maxDate: date
+        })
+    },
+    locale: {
+        days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+        daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+        daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+        months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+        monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        today: 'Today',
+        clear: 'Clear',
+        firstDay: 0
+    },
+    dateFormat: 'dd/MMMM'
+})
+
+// Select
+customSelect('select');

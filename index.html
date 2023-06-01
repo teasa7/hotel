@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="libs/CustomSelect/css/custom-select.css">
     <link rel="stylesheet" href="libs/youtubeLightbox/youtubeLightbox.css">
+    <link rel="stylesheet" href="libs/airDatepicker/air-datepicker.css">
 </head>
 <body>
     <header class="header">
@@ -35,11 +36,11 @@
             <form action="" class="form">
                 <div class="form__input-wrapper form__input--date">
                     <label for="date_in" class="form__label">Check in</label>
-                    <input type="text" class="form__input" id="date_in" name="date_in" placeholder="Check in">
+                    <input type="text" class="form__input" id="date_in" name="date_in" placeholder="Check in" autocomplete="off">
                 </div>
                 <div class="form__input-wrapper form__input--date">
                     <label for="date_out" class="form__label">Check out</label>
-                    <input type="text" class="form__input" id="date_out" name="date_out" placeholder="Check out">
+                    <input type="text" class="form__input" id="date_out" name="date_out" placeholder="Check out" autocomplete="off">
                 </div>
                 <div class="form__input-wrapper form__input--guests">
                     <label for="guests" class="form__label form__label-guest">Guests</label>
@@ -143,27 +144,27 @@
                 </header>
                 <h4 class="title title--4">Discover our luxury rooms interior design</h4>
                 <div class="column-rooms columm_between height-600">
-                    <button class="card-rooms" id="room_1" name="room" onclick="bigPhoto(event)">
+                    <a class="card-rooms" id="room_1" name="room" onclick="bigPhoto(event)">
                         <img class="card-rooms--img" src="img/main/room1.jpg" alt="Room">
                         <div class="card-rooms__info">
                             <p class="card-rooms__info--title">Classic room</p>
                             <p class="card-rooms__info--text">STARTING FROM : <span class="card-rooms__info--orange">$50.00/ Night</span></p>
                         </div>
-                    </button>
-                    <button class="card-rooms border-active" id="room_2" name="room" onclick="bigPhoto(event)">
+                    </a>
+                    <a class="card-rooms border-active" id="room_2" name="room" onclick="bigPhoto(event)">
                         <img class="card-rooms--img" src="img/main/room2.jpg" alt="Room">
                         <div class="card-rooms__info">
                             <p class="card-rooms__info--title">Ultra superior</p>
                             <p class="card-rooms__info--text">STARTING FROM : <span class="card-rooms__info--orange">$100.00/ Night</span></p>
                         </div>                   
-                    </button>
-                    <button class="card-rooms" id="room_3" name="room" onclick="bigPhoto(event)">
+                    </a>
+                    <a class="card-rooms" id="room_3" name="room" onclick="bigPhoto(event)">
                         <img class="card-rooms--img" src="img/main/room3.jpg" alt="Room">
                         <div class="card-rooms__info">
                             <p class="card-rooms__info--title">Grand deluxe</p>
                             <p class="card-rooms__info--text">STARTING FROM : <span class="card-rooms__info--orange">$500.00/ Night</span></p>
                         </div>
-                    </button>
+                    </a>    
                 </div>
                 <a class="card-big-room" href="#" >     
                     <img class="card-big-room--img" id="big_photo" src="img/main/big_room2.jpg" alt="Big room">
@@ -455,7 +456,7 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=d3d173d2-119e-4cdb-866b-5c6e84ed35aa&lang=ru_RU" type="text/javascript"></script>
 
     <script src="libs/CustomSelect/js/custom-select.min.js"></script>
-    <script src="libs/Easepick/js/easepick.min.js"></script>
+    <script src="libs/airDatepicker/air-datepicker.js"></script>
     <script src="libs/youtubeLightbox/youtubeLightbox.js"></script>
     <script src="js/main.js"></script>
 </body>

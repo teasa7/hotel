@@ -125,7 +125,7 @@ a {
   padding-top: 30px;
   padding-bottom: 75px;
   margin-left: auto;
-  background-image: url("../../img/header/figure.png");
+  background-image: url("../../../img/header/figure.png");
   background-repeat: no-repeat;
   background-position: right;
   margin-left: 100px;
@@ -267,6 +267,7 @@ a {
 
 .form__select {
   font-size: 40px;
+  color: #994C16;
 }
 
 .grid-four {
@@ -425,6 +426,10 @@ a {
 
 .flex-gap {
   gap: 30px;
+}
+
+.show {
+  z-index: 50;
 }
 
 .button {
