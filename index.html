@@ -12,60 +12,63 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__top">
-            <div class="header__top-row">
-                <a href="index.html"><img src="img/icons/logo.svg" alt="Логотип Alima"></a>
-                <div class="header__nav">
-                    <nav class="nav">
-                        <ul class="nav__list">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Review</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>   
-                    </nav>
+        <div class="header_container">
+            <div class="header__top">
+                <div class="header__top-row">
+                    <a href="index.html"><img src="img/icons/logo.svg" alt="Логотип Alima"></a>
+                    <div class="header__nav">
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Gallery</a></li>
+                                <li><a href="#">Review</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>   
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="header__title">
-            <h1 class="header__title--h1">25 Dollars</h1>
-            <h2 class="header__title--h2">Hotel- Resort</h2>
-        </div>
-        <div class="header__footer">
-            <p class="header__footer-text">Discovery the best place to experience and enjoy the life</p>
-            <form action="" class="form">
-                <div class="form__input-wrapper form__input--date">
-                    <label for="date_in" class="form__label">Check in</label>
-                    <input type="text" class="form__input" id="date_in" name="date_in" placeholder="Check in" autocomplete="off">
-                </div>
-                <div class="form__input-wrapper form__input--date">
-                    <label for="date_out" class="form__label">Check out</label>
-                    <input type="text" class="form__input" id="date_out" name="date_out" placeholder="Check out" autocomplete="off">
-                </div>
-                <div class="form__input-wrapper form__input--guests">
-                    <label for="guests" class="form__label form__label-guest">Guests</label>
-                    <select class="form__select form__label-guest" name="guests" id="guests">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5 or more">5 and more</option>
-                    </select>
-                </div>
-                <button class="button button--booking">Booking</button>
-            </form >
-        </div>
+            <div class="header__title">
+                <h1 class="header__title--h1">25 Dollars</h1>
+                <h2 class="header__title--h2">Hotel- Resort</h2>
+            </div>
+            <div class="header__footer">
+                <p class="header__footer-text">Discovery the best place to experience and enjoy the life</p>
+                <form action="" class="form">
+                    <div class="form__input-wrapper form__input--date">
+                        <label for="date_in" class="form__label">Check in</label>
+                        <input type="text" class="form__input" id="date_in" name="date_in" placeholder="Check in" autocomplete="off">
+                    </div>
+                    <div class="form__input-wrapper form__input--date">
+                        <label for="date_out" class="form__label">Check out</label>
+                        <input type="text" class="form__input" id="date_out" name="date_out" placeholder="Check out" autocomplete="off">
+                    </div>
+                    <div class="form__input-wrapper form__input--guests">
+                        <label for="guests" class="form__label form__label-guest">Guests</label>
+                        <select class="form__select form__label-guest" name="guests" id="guests">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5 or more">5 and more</option>
+                        </select>
+                    </div>
+                    <button class="button button--booking">Booking</button>
+                </form>
+            </div>
         </div>
     </header>
     <main class="main">
         <section class="section">
-            <div class="grid-four about-us">
+            <div class="grid-two-text about-us">
                 <header>
                     <h3 class="title title--3">Abous us</h3>
                     <span class="title-line"></span>
                 </header>
                 <h4 class="title title--4">Best place to enjoy your  lifetime</h4>
-                <article class="column column--flex">             
+            </div>
+            <div class="grid-two-main about-us">
+                <article class="flex-column flex-column--between">             
                     <p class="light_text">
                         By investing in technology that takes the friction out of travel, 
                         25 Dollars seamlessly connects millions of travelers to memorable 
@@ -110,7 +113,7 @@
         </section>
         <section class="section">
             <div class="how-to-work">
-                <header class="grid-four">
+                <header class="grid-two-text">
                     <div>
                         <h3 class="title title--3">How to work</h3>
                         <span class="title-line"></span>
@@ -137,13 +140,15 @@
             </div>    
         </section>
         <section class="section">
-            <div class="grid-four our-rooms">
+            <div class="grid-two-text our-rooms">
                 <header>
                     <h3 class="title title--3">Our rooms</h3>
                     <span class="title-line"></span>
                 </header>
                 <h4 class="title title--4">Discover our luxury rooms interior design</h4>
-                <div class="column-rooms columm_between height-600">
+            </div>
+            <div class="grid-two-blocks our-rooms">
+                <div class="flex-column flex-column--between height-600">
                     <a class="card-rooms" id="room_1" name="room" onclick="bigPhoto(event)">
                         <img class="card-rooms--img" src="img/main/room1.jpg" alt="Room">
                         <div class="card-rooms__info">
@@ -182,7 +187,7 @@
         </section>
         <section class="section">
             <div class="our-clients">
-                <header class="grid-four">
+                <header class="grid-two-text">
                     <div>
                         <h3 class="title title--3">Our clients</h3>
                         <span class="title-line"></span>

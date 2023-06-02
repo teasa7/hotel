@@ -1,13 +1,13 @@
 .title {
     position: relative;
     color: $green;
+    padding-top: 20px;
     &--3 {
         font-weight: 500;
         font-size: 40px;
         line-height: 60px;
         min-width: 350px;
-        padding-top: 20px;
-    padding-left: 20px;
+        padding-left: 20px;
     }
     &--4 {
         font-weight: 100;
@@ -20,6 +20,33 @@
     }
     &--padding-none {
         padding: 0;
+    }
+}
+.card {
+    // Card in how to work
+    &--text-accent {
+        color: $accent_work;
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 90px;
+    }
+    &--small-text {
+        color: $small_work;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    // Card in how to work
+    &--title-text {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 40px;
+    }
+    &--regular-text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: auto;
     }
 }
 .title-line {

@@ -1,15 +1,18 @@
 .header {
+    margin-left: auto;
+    background-image: url("../../../img/header/figure.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 40px;
+}
+.header_container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 920px;
     padding-top: 30px;
-    padding-bottom: 75px;
-    margin-left: auto;
-    background-image: url("../../../img/header/figure.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    margin-left: 100px;
+    padding-bottom: 75px;    
+    padding-left: 100px;
 }
 .header__top-row {
     display: flex;
