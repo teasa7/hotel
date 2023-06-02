@@ -66,9 +66,6 @@
     &--start {
         justify-content: start;
     }
-    &--between {
-        justify-content: space-between;
-    }
     &--end {
         justify-content: end;
     }
@@ -79,6 +76,15 @@
         padding-bottom: 20%;
     }
 } 
+.flex-room {
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    &--between {
+        justify-content: space-between;
+    }
+}
 .flex-center {
     display: flex;
     flex-direction: row;
