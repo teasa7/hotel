@@ -110,6 +110,10 @@ a {
   max-width: 1500px;
 }
 
+.hidden_header {
+  display: none;
+}
+
 .header {
   margin-left: auto;
   background-image: url("../img/header/figure.png");
@@ -564,6 +568,7 @@ a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  margin-bottom: 20px;
 }
 
 .how-to-work {
