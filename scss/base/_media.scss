@@ -8,7 +8,7 @@
         }
     }
     .header {
-        background-image: url("../../img/header/bg_photo.jpg");
+        background-image: url("../img/header/bg_photo.jpg");
         background-size: cover;
         border-radius: 0 0 20px 20px;
     }
@@ -180,7 +180,8 @@
         font-size: 14px;
     }
     .footer__info {
-        width: 430px;
+        width: 400px;
+        padding: 30px;
     }
     
 }
@@ -206,9 +207,7 @@
         padding: 20px;
     }
     .card--title-text {
-        font-size: 20px;
         line-height: 20px;
-        margin-bottom: 5px;
     }
     .card--work {
         width: 32%;
@@ -251,7 +250,7 @@
         width: 500px;
     }
     .footer__info {
-        width: 280px;
+        width: 35%;
         padding: 20px;
     }
     .text-title-dark, .text-title-light {
@@ -275,6 +274,277 @@
         height: 200px;
     }
 }
-@media (max-width: 800px) { 
-
+@media (max-width: 850px) { 
+    .header_container {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .mobile-nav-btn {
+		display: block;
+        margin-top: 40px;
+	}
+    .nav__list {
+		display: none;
+	}
+    .nav-user {
+		display: none;
+	}
+    .header__footer-text {
+        padding: 5px;
+        border-radius: 20px;
+        background-color: $white;
+        font-size: 20px;
+        color: $green;
+        margin-bottom: 20px;
+    }
+    .header__title { 
+        height: 230px;
+        margin-bottom: 50px;
+        &--h1 {
+            font-size: 80px;
+        }  
+        &--h2 {
+            font-size: 40px;
+        }    
+    }  
+    .header__top-row {
+        padding: 0;
+    }
+    .form {
+        margin: 0 auto;
+        width: 390px;
+        padding: 30px;
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 50% 50%;
+    }
+    .form__input-wrapper {
+        width: 100%;
+        padding-left: 20px;
+    }
+    .button--booking {
+        margin-left: 20px;
+        margin-right: auto;
+    }
+    .form__label {
+        border-right: none;
+    }
+    .form__input {
+        border-right: none;
+    }
+    .grid-two-text {
+        grid-template-rows: 50px;
+        grid-template-columns: 100%;
+        margin-bottom: 10px;
+    }
+    .flex-room {
+        height: 100%;
+    }
+    .border-active {
+        border-right: none;
+        border-bottom: 4px solid $green;
+    }
+    .button {
+        height: 45px;
+        font-size: 20px;
+        &--learn {
+            width: 170px;
+        }
+    }
+    .title {
+        .title--3 {
+            font-size: 32px;
+        }
+        &--4 {
+            font-size: 28px;
+            line-height: 30px;
+        }
+    }
+    .section {
+        margin: 0;
+    }
+    .about_img {
+        margin-bottom: 20px;
+    }
+    .card-rooms {
+        flex-direction: column;
+        height: auto;
+        &--img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 10px;
+        }
+    }
+    .card-rooms__info {
+        &--title {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 5px;
+        }
+        &--text {
+            font-size: 10px;
+        }
+        &--orange {
+            font-size: 12px;
+        }
+    }
+    .light_text {
+        font-size: 16px;
+    }
+    .flex-row {
+        flex-wrap: wrap;
+    }
+    .card {
+        &--text-accent {
+            font-size: 50px;
+        }
+        &--small-text {
+            font-size: 14px;
+        }
+        &--regular-text {
+            text-align: left;
+        }
+        &--work {
+            flex-direction: row;
+            width: 100%;
+            height: 200px;
+        }
+        &--about {
+            width: 50%;
+        }
+        &--work-text {
+            margin-left: 20px;
+        }
+        &--circle-img {
+            width: 100px;
+        }
+        &--regular-text {
+            text-align: left;
+        }
+    }
+    .title-line {
+        display: none;
+    } 
+    .flex-cards--work {
+        row-gap: 10px;
+        padding: 0;
+    }
+    .card-big-room--img {
+        height: 400px;
+    }
+    .card--main {
+        padding: 20px;
+    }
+    .footer__info {
+        position: relative;
+        width: 100%;
+        border-radius: 20px;
+        right: auto;
+        height: 100%;
+        padding: 30px;
+    }
+    .footer-bg {
+        display: none;
+    }
+}
+@media (max-width: 585px) {
+    .flex-room {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .card-rooms {
+        width: 100%;
+        flex-direction: row;
+        &--img {
+            width: 50%;
+        }
+    }
+    .border-active {
+        border-bottom: none;
+        border-right: 4px solid $green;
+    }
+    .card-big-room--img {
+        height: 300px;
+    }
+    .grid-cards {
+        grid-template-columns: 100%;
+        row-gap: 30px;
+    }
+    .flex-column {
+        &--start_padding {
+            padding-bottom: 0;
+        }
+        &--end_padding {
+            padding-bottom: 0;
+        }
+    }
+    .header__title { 
+        &--h1 {
+            font-size: 48px;
+        }
+        &--h2 {
+            font-size: 22px;
+        }
+    }
+    .header__footer-text {
+        font-size: 14px;
+        border-radius: 10px;
+        padding: 0 5px;
+        line-height: 26px;
+    } 
+}
+@media (max-width: 450px) {
+    .footer__info {
+        padding: 10px;
+    }
+    .grid-two-blocks {
+        row-gap: 20px;
+    }
+    .grid-two-text {
+        padding: 0;
+    }
+    .card {
+        padding: 10px;
+        &--title-text {
+            font-size: 16px;
+        }
+        &--regular-text {
+            text-align: center;
+            font-size: 12px;
+            line-height: 20px;
+        }
+        &--work-text {
+            margin-left: 0;
+        }
+        &--work {
+            height: 150px;
+        }
+        &--circle-img {
+            display: none;
+        }
+    }
+    .card-rooms {
+        height: 100px;
+        &--img {
+            margin-bottom: 0;
+        }
+    }
+    .card-big-room--img {
+        height: 200px;
+    }
+    .form__input-wrapper {
+        width: 200px;
+        padding-left: 0;
+        background-position: 0 0;
+    }
+    .form {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        width: 260px;
+        padding: 20px;
+    }
+    .button--booking {
+        margin: 0 auto;
+    }
 }

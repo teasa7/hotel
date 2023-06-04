@@ -23,7 +23,10 @@
                                 <li><a href="#">Gallery</a></li>
                                 <li><a href="#">Review</a></li>
                                 <li><a href="#">Contact</a></li>
-                            </ul>   
+                            </ul> 
+                            <button class="mobile-nav-btn">
+                                <span class="nav-icon"></span>
+                            </button>  
                         </nav>
                     </div>
                 </div>
@@ -58,6 +61,15 @@
             </div>
         </div>
     </header>
+    <div class="mobile-nav-fade"></div>
+    <div class="mobile-nav">
+        <ul class="mobile-nav__list">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Review</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
     <main class="main">
         <section class="section">
             <div class="grid-two-text about-us">
@@ -123,18 +135,25 @@
                 <div class="flex-row flex-row--between flex-cards--work">
                     <div class="card card--work">
                         <img class="card--circle-img" src="img/main/luxury.jpg" alt="Luxury">
-                        <p class="card--title-text">Luxury Resort</p>
-                        <p class="card--regular-text">We don’t charge you any booking fees or add any administrative charges. And in many cases, your booking can be canceled free of charge.</p>
+                        <div class="card--work-text">
+                            <p class="card--title-text">Luxury Resort</p>
+                            <p class="card--regular-text">We don’t charge you any booking fees or add any administrative charges. And in many cases, your booking can be canceled free of charge.</p>
+                        </div>
+                        
                     </div>
                     <div class="card card--work">
                         <img class="card--circle-img" src="img/main/professional.jpg" alt="Professional">
-                        <p class="card--title-text">Professional Services</p>
-                        <p class="card--regular-text">We don’t charge you any booking fees or add any administrative charges. And in many cases, your booking can be canceled free of charge.</p>
+                        <div class="card--work-text">
+                            <p class="card--title-text">Professional Services</p>
+                            <p class="card--regular-text">We don’t charge you any booking fees or add any administrative charges. And in many cases, your booking can be canceled free of charge.</p>
+                        </div>
                     </div>
                     <div class="card card--work">
                         <img class="card--circle-img" src="img/main/enjoy.jpg" alt="Enjoy your Trip">
-                        <p class="card--title-text">Enjoy your Trip</p>
-                        <p class="card--regular-text">We don’t charge you any booking fees or add any administrative charges. And in many cases, your booking can be canceled free of charge.</p>
+                        <div class="card--work-text">
+                            <p class="card--title-text">Enjoy your Trip</p>
+                            <p class="card--regular-text">We don’t charge you any booking fees or add any administrative charges. And in many cases, your booking can be canceled free of charge.</p>
+                        </div>
                     </div>
                 </div>
             </div>    
@@ -464,5 +483,6 @@
     <script src="libs/airDatepicker/air-datepicker.js"></script>
     <script src="libs/youtubeLightbox/youtubeLightbox.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/mobile-nav.js"></script>
 </body>
 </html>
