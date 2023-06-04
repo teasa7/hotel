@@ -59,7 +59,7 @@ ymaps.ready(init);
         }, 
         {
             iconLayout: 'default#image',
-            iconImageHref: '../img/icons/map.svg',
+            iconImageHref: 'img/icons/map.svg',
             iconImageSize: [50, 50],
             iconImageOffset: [-20, -40]
         }
